@@ -36,9 +36,26 @@ public class q001_최소값_최대값 {
 		arr[i] = arr[arr.length - i - 1];
 		arr[arr.length - i - 1] = temp;
 	}
+	
+	private static int[] rcopy(int[] arr) {
+		int[] a = arr;
+		
+		reverse(arr);
+		return arr;
+		
+	}
+
+	private static int sum(int[] arr) {
+		int sum = 0;
+		for (int i = 0; i < arr.length - 1; i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
 
 	public static void main(String args[]) {
 		int[] a = new int[5];
+		int[] b = new int[5];
 		Random rand = new Random();
 		
 		// 랜덤 원소 삽입
@@ -47,7 +64,7 @@ public class q001_최소값_최대값 {
 		}
 
 		// 배열 출력
-		System.out.println(Arrays.toString(a));
+		System.out.println("a 원본 :"+ Arrays.toString(a));
 		
 		System.out.println("\n배열의 원소 역순");
 		reverse(a);
@@ -58,9 +75,15 @@ public class q001_최소값_최대값 {
 		System.out.printf("\n배열의 최대값은 %d 입니다.", maxOf(a));
 		
 		// 모든 요소 합
-		sum();
+		System.out.println("모든요소 합 :"+sum(a));
 		
 		// 모든 요소 역순 복사
-		rcopy();
+		b = rcopy(a);
+		
+		System.out.println("a 원본: "+Arrays.toString(a));
+		System.out.println("b 카피: " + Arrays.toString(b));
 	}
+	
+	// 모든 요소 역순 복사
+	
 }
