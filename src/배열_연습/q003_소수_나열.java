@@ -1,5 +1,6 @@
 package 배열_연습;
 
+// 커밋 푸쉬 확인용 text
 public class q003_소수_나열 {
 
 	public static void main(String args[]) {
