@@ -1,4 +1,4 @@
-package 배열_연습;
+package C02_배열_연습;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package 반복문_연습;
+package C01_반복문_연습;
 
 import java.util.Scanner;
 

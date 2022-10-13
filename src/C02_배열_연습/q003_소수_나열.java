@@ -1,4 +1,4 @@
-package 배열_연습;
+package C02_배열_연습;
 
 // 커밋 푸쉬 확인용 text
 public class q003_소수_나열 {
@@ -9,6 +9,12 @@ public class q003_소수_나열 {
 		prime03();
 
 	}
+	
+	/*
+	 * @param 	변수명	변수 역할
+	 * @param 	변수명
+	 * @return 	파라미터명	파라미터 역할
+	 */
 
 	private static void prime03() {
 		// 배열을 사용하여 소수로 계산

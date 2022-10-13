@@ -1,8 +1,14 @@
-package 배열_연습;
+package C02_배열_연습;
 
 import java.util.Scanner;
 
 public class q002_진수변환 {
+	/**
+	 * @param	x	입력받은 값, 변환할 값
+	 * @param	r
+	 * @param	d
+	 * @return	digits	n진수로 변환이 된 값
+	 */
 	static int cardConv(int x, int r, char[] d) {
 		int digits = 0; // 자리수
 		String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
