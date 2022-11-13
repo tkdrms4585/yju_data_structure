@@ -12,7 +12,9 @@ public class Main {
 //		int[] x2 = {1,3,6,4,7,5,8,9};
 //		BubbleSort.bubbleSort2(x2, nx);
 		
-		SelectionSort.selectionSort(x, nx);
-
+//		SelectionSort.selectionSort(x, nx);
+		
+		InsertionSort.insertionSort2(x, nx);
+		InsertionSort.print(x, nx);
 	}
 }
